@@ -1,24 +1,67 @@
 <html>
+
 <body>
-<script>
+  <script>
     document.onclick = userClicked;
     function userClicked() {
     var x = event.clientX;
     var y = event.clientY;
-    var snowball = document.getElementById("snowballAppear");
-    snowball.style.display = '';
-    snowball.style.position = 'absolute';
-    snowball.style.left = x + 'px';
-    snowball.style.top = y + 'px';
-    }
-</script>
+    // var snowball = document.getElementById("snowballAppear");
+    // var snowball2 = document.getElementById("snowballAppear2");
+    // var snowball3 = document.getElementById("snowballAppear3");
 
-<div class="" "container"="">
-    <div class="" "picture"="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{image 12}&nbsp;&nbsp;<img alt="snowballAppear" id="snowballAppear" style="position: absolute; left: 379px; top: 245px; bottom: 299px;" src="https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif">
-        
+    // var choice = new Date().getUTCMilliseconds()%3;
+
+    // if (choice === 0)
+    // {
+    //   snowball.style.display = '';
+    //   snowball.style.position = 'absolute';
+    //   snowball.style.left = x + 'px';
+    //   snowball.style.top = y + 'px';
+    // }
+    // else if (choice === 1)
+    // {
+    //   snowball2.style.display = '';
+    //   snowball2.style.position = 'absolute';
+    //   snowball2.style.left = x + 'px';
+    //   snowball2.style.top = y + 'px';
+    // }
+    // else if (choice === 2)
+    // {
+    //   snowball3.style.display = '';
+    //   snowball3.style.position = 'absolute';
+    //   snowball3.style.left = x + 'px';
+    //   snowball3.style.top = y + 'px';
+    // }
+
+    var elem = '<img src="https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif">';
+
+    var elem = document.createElement("img");
+    elem.setAttribute("src", "https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif");
+
+    document.getElementById('imagearea').appendChild(elem);
+
+
+
+    }
+  </script>
+
+  <div id="imagearea" class="" "container"="">
+    <div class="" "picture"="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{image 12}&nbsp;&nbsp;
+      <div></div>
+      <!-- <img alt="snowballAppear" id="snowballAppear" style="position: absolute; left: 379px; top: 245px; bottom: 299px;" src="https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif">
+
+      <img alt="snowballAppear" id="snowballAppear2" style="position: absolute; left: 379px; top: 245px; bottom: 299px;" src="https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif">
+
+      <img alt="snowballAppear" id="snowballAppear3" style="position: absolute; left: 379px; top: 245px; bottom: 299px;" src="https://freight.cargo.site/t/original/i/04ff2e590ca2f78872a6d09be7796298c777af5a2c747cabf684eca64e343f93/ezgif.com-gif-maker-8.gif"> -->
+
     </div>
 
 
 
-</div> {image 12}{image 14}{image 15}
-</body></html>
+  </div> {image 12}{image 14}{image 15}
+</body>
+
+</html>
