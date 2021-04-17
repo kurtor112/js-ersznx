@@ -714,7 +714,7 @@ body.mobile .audio-player {
 .animation {
   position: relative;
   animation-name: animation-bottom-to-top;
-  animation-duration: 3s;
+  animation-duration: 3s; /*modify the animation duration if necessary*/
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -722,7 +722,7 @@ body.mobile .audio-player {
 
 @keyframes animation-bottom-to-top {
   0% {
-    top: 500px;
+    top: 500px; /*modify image display location (y-axis) if necessary*/
     display: block;
     opacity: 1;
   }
