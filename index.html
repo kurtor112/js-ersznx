@@ -6,10 +6,13 @@
     function userClicked() {
     var x = event.clientX;
     var y = event.clientY;
+
+    // Get a random number
     var choice = Math.floor(Math.random() * 3); 
 
     if (choice === 0)
     {
+      // Populate heart image
       var elem1 = document.createElement("img");
       elem1.setAttribute("src", "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-64.png");
       elem1.setAttribute("style", "position: absolute; left: " + x + "px;" + " right: " + y + "px; display: block; opacity:1");
@@ -18,6 +21,7 @@
     }
     else if (choice === 1)
     {
+      // Populate light bulb image
       var elem2 = document.createElement("img");
       elem2.setAttribute("src", "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678078-light-bulb-64.png");
       elem2.setAttribute("style", "position: absolute; left: " + x + "px;" + " right: " + y + "px; display: block; opacity:1");
@@ -26,6 +30,7 @@
     }
     else if (choice === 2)
     {
+      // Populate star image
       var elem3 = document.createElement("img");
       elem3.setAttribute("src", "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678064-star-64.png");
       elem3.setAttribute("style", "position: absolute; left: " + x + "px;" + " right: " + y + "px; display: block; opacity:1");
